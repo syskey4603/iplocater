@@ -16,7 +16,7 @@ bot = commands.Bot(command_prefix= ".")
 
 @bot.command()
 async def locateip(ctx, arg):
-    data = requests.get("https://api.ipgeolocation.io/ipgeo?apiKey=5dbc5fa233e9480cb966920dba58dd08&ip=" + arg).json()
+    data = requests.get("https://api.ipgeolocation.io/ipgeo?apiKey=puturkey&ip=" + arg).json()
     await ctx.send("Locating ip...")
     time.sleep(3)
 
